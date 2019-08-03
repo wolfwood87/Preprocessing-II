@@ -229,9 +229,26 @@ header nav a {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    width: 200%;
+  }
+  .home .content-section img {
+    width: 250%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+  .home .inverse-content img {
+    width: 250%;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -268,4 +285,11 @@ header nav a {
   padding-top: 1%;
   color: #FFFFFF;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 250%;
+    padding-left: 20%;
+  }
 }
